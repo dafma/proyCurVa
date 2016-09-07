@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.teal-cyan.min.css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <style media="screen">
+      body{
+        text-align: center;
+        justify-content: center;
+      }
+      .mdl-layout{
+        align-items: center;
+        justify-content: center;
+      }
+      form .mdl-textfield{
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+ <div class="mdl-layout mdl-js-layout mdl-color--grey-100">
+   <main class="md-layout__content">
+     <h1>TextField</h1>
+     <div class="mdl-textfield mdl-js-textfield">
+      <input type="text"  class="mdl-textfield__input" id="basic">
+      <label for="basis" class="mdl-textfield__label">User</label>
+     </div>
+
+     <h3>TextField con label flotando</h3>
+     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <input type="text" class="mdl-textfield__input" id="float">
+      <label for="float" class="mdl-textfield__label">User</label>
+     </div>
+
+     <h3>Con icon expandible</h3>
+     <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+      <label for="search" class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">motorcycle</i>
+      </label>
+      <div class="mdl-textfield__expandable-holder">
+            <input type="text"  class="mdl-textfield__input" id="search">
+            <label for="search" class="mdl-textfield__label"></label>
+      </div>
+
+      <form class="" action="#" method="post">
+        <div class="mdl-textfield mdl-js-textfield md-textfield--floating-label">
+          <input type="text" name="name" value="" class="mdl-textfield__input" id="username">
+          <label for="username" class="mdl-textfield__label"> Username</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield md-textfield--floating-label">
+          <input type="password" name="name" value="" class="mdl-textfield__input" id="password">
+          <label for="password" class="mdl-textfield__label">Password</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield md-textfield--floating-label">
+          <input type="email" name="name" value="" class="mdl-textfield__input" id="email">
+          <label for="email" class="mdl-textfield__label"> email</label>
+        </div>
+        <button type="button" name="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored ">Enviar</button>
+      </form>
+     </div>
+   </main>
+
+ </div>
+  <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+  </body>
+</html>
