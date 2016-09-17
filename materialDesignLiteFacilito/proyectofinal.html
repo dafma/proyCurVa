@@ -1,99 +1,364 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.teal-cyan.min.css" />
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-    <style media="screen">
-      .cf-color{
-        background-color: #000;
-      }
-      .cf-logo{
-        width: 150px;
-        height: 50px;
-      }
-      .nav-link-sup{
-        font-weight: 700;
-        font-size: 16px;
-      }
-      .nav-link-sup .mdl-navigation__link:hover{
-        border-bottom: solid 4px #8bc34a;
-      }
-      .cf-drawer{
-        border-right: none;
-      }
-      .cf-drawer-separator{
-        height: 2px;
-        background-color: #dcdcdc;
-      }
-      .cf-drawer .mdl-layout-title{
-        height: 160px;
-      }
-      .cf-slide{
-        background: url('http://indigohierbas.es/wp-content/uploads/2015/12/agua-de-mar.jpg') center no-repet;
-        background-size: cover;
-        height: 700px;
-        width: 100%;
-      }
-      .cf-slogan{
-        font-size: 72px;
-        padding-top: 200px;
-      }
-      .cf-slogan-sub{
-        font-size: 30px;
-        padding-top: 48px;
-      }
-      .cf-slogan-principal{
-        color: white;
-        font-weight: 700;
-        line-height: 1;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="cf-color mdl-layout__header">
-        <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">
-            <a href="index.html">
-              <img class="cf-logo" src="https://d13yacurqjgara.cloudfront.net/users/119567/screenshots/1450131/charging-rhino-logo-dribbble.png" alt="" />
-            </a>
-          </span>
-          <div class="mdl-layout-spacer">
-          </div>
-          <!-- Navegacion Principal -->
-          <nav class="nav-link-sup mdl-navigation">
-            <a href="#"  class="nav-link-sup mdl-navigation__link mdl-typography--text-uppercase">Taleres</a>
-            <a href="#"  class="nav-link-sup mdl-navigation__link mdl-typography--text-uppercase">Proximos Eventos</a>
-            <a href="#"  class="nav-link-sup mdl-navigation__link mdl-typography--text-uppercase">Testimonios</a>
-            <a href="#"  class="nav-link-sup mdl-navigation__link mdl-typography--text-uppercase">Suscribete</a>
-          </nav>
-        </div>
-      </header>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <div class="mdl-layout__drawer">
-        <span class="cf-color mdl-layout-title">
-          <a href="#"><img src="http://www.blitz-bg.com/wp-content/uploads/2012/05/rhino.png" alt="" /></a>
-        </span>
-        <nav class="mdl-navigation">
-          <a href="#" class="mdl-navigation__link">Talleres</a>
-          <a href="#" class="mdl-navigation__link">Proximos Eventos</a>
-          <a href="#" class="mdl-navigation__link">Testimonios</a>
-          <a href="#" class="mdl-navigation__link">Suscribete</a>
-          <div class="cf-drawer-separator"></div>
-          <a href="#" class="mdl-navigation__link">Iniciar Sesion</a>
-        </nav>
-      </div>
-    </div>
-    <!--slide-->
-    <div class="mdl-layout__content">
-      <div class="cf-slide mdl-typography--text-center">
-        <div class="cf-slogan-principal cf-slogan">Codigo Facilito Tu mejor Aliado</div>
-        <div class="cf-slogan-principal cf-slogan-sub">Blog de Preguntale a un desarrollador</div>
-      </div>
-    </div>
-  <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
-  </body>
+	<title>CodigoFacilito-MDL</title>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+ 	<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.red-cyan.min.css" />
+ 	<link rel="stylesheet" href="css/estilos.css">
+  <style media="screen">
+  .cf-color{
+background-color: #000;
+}
+.cf-logo{
+width: 150px;
+height: 50px;
+}
+.nav-link-sup{
+font-weight: 700;
+font-size: 16px;
+}
+.nav-link-sup .mdl-navigation__link:hover {
+border-bottom: solid 4px #8bc34a;
+}
+.cf-drawer{
+border-right: none;
+}
+.cf-drawer-separator{
+height: 2px;
+background-color: #dcdcdc;
+}
+.cf-drawer .mdl-layout-title{
+height: 160px;
+}
+.cf-drawer .cf-logo{
+bottom: 16px;
+position: absolute;
+}
+.cf-slide{
+background: url('../images/slide1.jpg') center no-repeat;
+background-size: cover;
+height: 700px;
+width: 100%;
+}
+.cf-slogan-ppal{
+color:white;
+font-weight: 700;
+line-height: 1;
+
+}
+.cf-slogan{
+font-size: 72px;
+padding-top: 200px;
+}
+.cf-slogan-sub{
+font-size: 30px;
+padding-top: 48px;
+}
+.cf-paseo{
+color: #767777;
+font-size: 36px;
+padding-top: 400px;
+}
+.cf-section-taller{
+position: relative;
+padding: 8px 0;
+max-width: 1044px;
+margin: 0 auto;
+}
+.cf-section-taller .cf-section-title{
+padding: 36px 0;
+text-align: center;
+}
+#grid-taller .mdl-card__media{
+overflow: hidden;
+background: transparent;
+}
+#grid-taller .mdl-card__media img{
+width: 100%;
+}
+.cf-link{
+color: #8bc34a !important;
+}
+.cf-informacion{
+position: relative;
+background: url('../images/slide2.jpg') center top no-repeat;
+height: 600px;
+}
+.cf-informacion-bg{
+position: absolute;
+bottom: 0;
+width: 100%;
+background-color: #1b5e20;
+}
+.cf-informacion-text{
+color: white;
+margin-left: 25%;
+max-width: 800px;
+padding: 24px;
+text-align: left;
+}
+.cf-informacion-text>p{
+padding-top: 10px;
+}
+.cf-botton-youtube{
+background-color: #b71c1c;
+color: white;
+
+}
+.cf-eventos{
+margin: 30px auto;
+max-width: 1044px;
+}
+.cf-title{
+margin: 20px auto;
+}
+
+.cf-compartir{
+position: relative;
+float: right;
+top:-4px;
+}
+.mdl-card__supporting-text>p{
+padding-top: 20px;
+}
+.cf-footer{
+background-color: #fafafa;
+}
+  </style>
+
+</head>
+
+<body>
+
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="cf-color mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title">
+					<a href="index.html"><img class="cf-logo" src="images/logo-cf.png" alt="logo"></a>
+				</span>
+
+				<div class="mdl-layout-spacer"></div>
+
+				<!--Navegacion Principal-->
+
+				<nav class="nav-link-sup mdl-navigation">
+					<a href="#" class="nav-link-sup mdl-navigation__link mdl-typography--text-uppercase">Talleres</a>
+					<a href="#" class="nav-link-sup mdl-navigation__link mdl-typography--text-uppercase">Proximos Eventos</a>
+					<a href="#" class="nav-link-sup mdl-navigation__link mdl-typography--text-uppercase">Testimonios</a>
+					<a href="#" class="nav-link-sup mdl-navigation__link mdl-typography--text-uppercase">Suscribete</a>
+				</nav>
+			</div>
+		</header>
+
+		<!--navegacion Lateral-->
+		<div class="cf-drawer mdl-layout__drawer">
+			<span class="cf-color mdl-layout-title">
+				<a href="#"><img class="cf-logo" src="images/logo-cf.png" alt="logo"></a>
+			</span>
+			<nav class="mdl-navigation">
+				<a href="" class="mdl-navigation__link">Talleres</a>
+				<a href="" class="mdl-navigation__link">Proximos Eventos</a>
+				<a href="" class="mdl-navigation__link">Testimonios</a>
+				<a href="" class="mdl-navigation__link">Suscribete</a>
+				<div class="cf-drawer-separator"></div>
+				<a href="" class="mdl-navigation__link">Iniciar Sesion</a>
+			</nav>
+		</div>
+
+		<!--Slide-->
+		<div class="mdl-layout__content">
+			<div class="cf-slide mdl-typography--text-center">
+				<div class="cf-slogan-ppal cf-slogan">CodigoFacilito Tu mejor Aliado</div>
+				<div class="cf-slogan-ppal cf-slogan-sub">Blog de Preguntale a un Desarrollador && CodigoFacilitoNews </div>
+				<div class="cf-paseo">
+					Realiza un Breve Paseo
+					<a href="#talleres">
+						<button class="mdl-button mdl-js-button mdl-button--accent mdl-button--fab mdl-js-ripple--effect"><i class="material-icons">keyboard_arrow_down</i></button>
+					</a>
+				</div>
+
+				<!--Star section Talleres-->
+				<section class="cf-section-taller">
+					<a name="talleres"></a>
+					<div class="cf-section-title mdl-typography--display-1-color-contrast">
+						Talleres
+					</div>
+					<div id="grid-taller" class="mdl-grid">
+						<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+							<div class="mdl-card__media">
+								<img src="images/img1.jpg" alt="">
+							</div>
+							<div class="mdl-card__title">
+								<h4 class="mdl-card__title-text">Taller#1</h4>
+							</div>
+							<div class="mdl-card__supporting-text">
+								<span class="mdl-typography--font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt repellat adipisci ut culpa, iste, et omnis voluptate eaque animi eius illo. Officia aliquam ea consectetur libero, nulla deserunt numquam, error.</span>
+							</div>
+							<div class="mdl-card__actions">
+								<a href="" class="cf-link mdl-button mdl-js-button mdl-typograhy--text-uppercase">Leer mas
+									<i class="material-icons">chevron_right</i>
+								</a>
+							</div>
+						</div>
+
+						<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+							<div class="mdl-card__media">
+								<img src="images/img2.jpg" alt="">
+							</div>
+							<div class="mdl-card__title">
+								<h4 class="mdl-card__title-text">Taller#2</h4>
+							</div>
+							<div class="mdl-card__supporting-text">
+								<span class="mdl-typography--font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt repellat adipisci ut culpa, iste, et omnis voluptate eaque animi eius illo. Officia aliquam ea consectetur libero, nulla deserunt numquam, error.</span>
+							</div>
+							<div class="mdl-card__actions">
+								<a href="" class="cf-link mdl-button mdl-js-button mdl-typograhy--text-uppercase">Leer mas
+									<i class="material-icons">chevron_right</i>
+								</a>
+							</div>
+						</div>
+
+						<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+							<div class="mdl-card__media">
+								<img src="images/img3.jpg" alt="">
+							</div>
+							<div class="mdl-card__title">
+								<h4 class="mdl-card__title-text">Taller#3</h4>
+							</div>
+							<div class="mdl-card__supporting-text">
+								<span class="mdl-typography--font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt repellat adipisci ut culpa, iste, et omnis voluptate eaque animi eius illo. Officia aliquam ea consectetur libero, nulla deserunt numquam, error.</span>
+							</div>
+							<div class="mdl-card__actions">
+								<a href="" class="cf-link mdl-button mdl-js-button mdl-typograhy--text-uppercase">Leer mas
+									<i class="material-icons">chevron_right</i>
+								</a>
+							</div>
+						</div>
+
+						<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+							<div class="mdl-card__media">
+								<img src="images/img4.jpg" alt="">
+							</div>
+							<div class="mdl-card__title">
+								<h4 class="mdl-card__title-text">Taller#4</h4>
+							</div>
+							<div class="mdl-card__supporting-text">
+								<span class="mdl-typography--font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt repellat adipisci ut culpa, iste, et omnis voluptate eaque animi eius illo. Officia aliquam ea consectetur libero, nulla deserunt numquam, error.</span>
+							</div>
+							<div class="mdl-card__actions">
+								<a href="" class="cf-link mdl-button mdl-js-button mdl-typograhy--text-uppercase">Leer mas
+									<i class="material-icons">chevron_right</i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--end section Talleres-->
+
+				<!--Star section Informacion-->
+				<div class="cf-informacion">
+					<div class="cf-informacion-bg">
+						<div class="cf-informacion-text">
+							<span class="mdl-typography--display-2 mdl-typogrphy--font-thin">
+								CodigoFacilito Tu Canal de Aprendizaje
+							</span>
+							<p class="mdl-typography--headline mdl-typography--font-thin">
+								Te Ofrecemos una Gran Cantidad de Videos de Programacion
+							</p>
+							<a href="" class="cf-botton-youtube mdl-button mdl-js-button">Suscribete a Nuestro Canal En Youtube</a>
+						</div>
+					</div>
+				</div>
+				<!--End section Informacion-->
+
+				<!--Star Section Eventos-->
+				<section class="cf-eventos" id="eventos">
+					<span class="cf-title mdl-typography--display-1-color-contrast">Proximos Eventos</span>
+					<div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-card mdl-shadow--4dp">
+						<div class="mdl-card__media mdl-cell mdl-cell--12-col-tablet">
+							<img src="" alt="">
+						</div>
+						<div class="mdl-cell mdl-cell--8-col">
+							<h2 class="mdl-card__title-text">Evento #1</h2>
+							<div class="mdl-card__supporting-text mdl-typography--text-justify">
+								<span>Fecha: # Agosto 2016</span>
+								<div class="material-icons cf-compartir" id="tt1">share</div>
+								<div class="mdl-tooltip" for="tt1">Compartir</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia assumenda recusandae repudiandae quisquam inventore dignissimos, illum, ea perferendis beatae laboriosam sapiente. Ducimus nesciunt deleniti unde eligendi! Maxime expedita fugiat ad.</p>
+								<span>Categoria: <a href="">Programacion</a></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-card mdl-shadow--4dp">
+						<div class="mdl-card__media mdl-cell mdl-cell--12-col-tablet">
+							<img src="" alt="">
+						</div>
+						<div class="mdl-cell mdl-cell--8-col">
+							<h2 class="mdl-card__title-text">Evento #1</h2>
+							<div class="mdl-card__supporting-text mdl-typography--text-justify">
+								<span>Fecha: # Agosto 2016</span>
+								<div class="material-icons cf-compartir" id="tt2">share</div>
+								<div class="mdl-tooltip" for="tt2">Compartir</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia assumenda recusandae repudiandae quisquam inventore dignissimos, illum, ea perferendis beatae laboriosam sapiente. Ducimus nesciunt deleniti unde eligendi! Maxime expedita fugiat ad.</p>
+								<span>Categoria: <a href="">Programacion</a></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-card mdl-shadow--4dp">
+						<div class="mdl-card__media mdl-cell mdl-cell--12-col-tablet">
+							<img src="" alt="">
+						</div>
+						<div class="mdl-cell mdl-cell--8-col">
+							<h2 class="mdl-card__title-text">Evento #1</h2>
+							<div class="mdl-card__supporting-text mdl-typography--text-justify">
+								<span>Fecha: # Agosto 2016</span>
+								<div class="material-icons cf-compartir" id="tt3">share</div>
+								<div class="mdl-tooltip" for="tt3">Compartir</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia assumenda recusandae repudiandae quisquam inventore dignissimos, illum, ea perferendis beatae laboriosam sapiente. Ducimus nesciunt deleniti unde eligendi! Maxime expedita fugiat ad.</p>
+								<span>Categoria: <a href="">Programacion</a></span>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+				<!--End Section Eventos-->
+
+				<!--Star foooter-->
+				<footer class="cf-footer mdl-mega-footer">
+					<div class="mdl-mega-footer--top-section">
+						<div class="mdl-mega-footer--left-section">
+							<a href="" class="mdl-mega-footer--social-btn"><img src="images/logo-facebook.png" alt=""></a>
+							<a href="" class="mdl-mega-footer--social-btn"><img src="images/logo-twitter.png" alt=""></a>
+							<a href="" class="mdl-mega-footer--social-btn"><img src="images/logo-you.png" alt=""></a>
+						</div>
+						<div class="mdl-mega-footer--right-section">
+							<a href="#top" class="mdl-typography--font-light">
+								Back to Top
+								<i class="material-icons">keyboard_arrow_up</i>
+							</a>
+						</div>
+					</div>
+					<div class="mdl-mega-footer--middle-section">
+						<p class="mdl-typography--font-light">CodigoFacilito - 2016<br>
+							Tutor Y diseñador: Jose Cedeño
+						</p>
+					</div>
+
+				</footer>
+
+				<!--End footer-->
+
+			</div>
+		</div>
+	</div>
+<script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+</body>
 </html>
