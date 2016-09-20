@@ -1,0 +1,30 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<dom-module id="hola-codigofaciito">
+  <template>
+    <style media="screen">
+      :host{
+        background-color: red;
+        display: block;
+      }
+    </style>
+    <h1>Hola [[name]] tienes [[edad]]</h1>
+
+  </template>
+  <script type="text/javascript">
+    Polymer({
+      is: "hola-codigofaciito",
+      properties:{
+        name:{
+          type:  String,
+          value: "default"
+        },
+        edad: {
+          type: Number,
+          value: 4
+        }
+      }
+    })
+  </script>
+
+</dom-module>
