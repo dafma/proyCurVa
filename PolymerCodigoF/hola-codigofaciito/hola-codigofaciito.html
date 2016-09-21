@@ -8,7 +8,7 @@
         display: block;
       }
     </style>
-    <h1>Hola [[name]] tienes [[edad]]</h1>
+    <h1 id="titulo">Hola [[name]] tienes [[edad]]</h1>
 
   </template>
   <script type="text/javascript">
@@ -23,6 +23,27 @@
           type: Number,
           value: 4
         }
+      },
+      created: function(){
+        console.log("El elemento se creo");
+        console.log(this);
+        console.log(this.$);
+      },
+      ready: function(){
+        console.log("El elemento esta listo");
+        console.log(this);
+        console.log(this.$);
+        console.log(this.$.titulo);
+      }
+      //atach se ejecuta despues de ready y se puede ejecutar muchas veces
+      attached: function(){
+        console.log("l elemento está ya en el documento");
+      },
+      detached: function(){
+        console.log("Cuando el elemento se saca");
+      },
+      attributeChanged: function(){
+        
       }
     })
   </script>
