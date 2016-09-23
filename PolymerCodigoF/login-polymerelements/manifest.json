@@ -1,0 +1,6 @@
+{
+  "name": "login-polymerelements",
+  "short_name": "login-polymerelements",
+  "start_url": "/",
+  "display": "standalone"
+}
