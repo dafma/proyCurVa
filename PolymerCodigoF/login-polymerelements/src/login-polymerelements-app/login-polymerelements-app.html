@@ -40,7 +40,7 @@
       }
     </style>
     <h2>Hello [[prop1]]</h2>
-    <paper-card heading="" elevation="4" animated-shadow="false">
+    <paper-card heading="" elevation="4" animated-shadow="false" class="card">
       <div class="card-header">
         <iron-icon icon="account-circle"></iron-icon>
         Crear cuenta.
@@ -53,8 +53,6 @@
         <div class="card-actions">
           <paper-button raised id="login">Enviar</paper-button>
           <paper-button>Cancelar</paper-button>
-
-
         </div>
       </form>
 
@@ -63,9 +61,10 @@
 
   <script>
     Polymer({
-
       is: 'login-polymerelements-app',
       ready:function(){
+        //select de los elementos del dom heeramienta de seleccion rapida
+        console.log(this.$$(".card"));
         this.$.login.addEventListener("click",()=>{
           this.$.form.submit()
         })
