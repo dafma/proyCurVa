@@ -55,26 +55,24 @@
           <paper-button>Cancelar</paper-button>
         </div>
       </form>
-
     </paper-card>
   </template>
 
   <script>
     Polymer({
       is: 'login-polymerelements-app',
-      ready:function(){
-        //select de los elementos del dom heeramienta de seleccion rapida
-        console.log(this.$$(".card"));
-        this.$.login.addEventListener("click",()=>{
-          this.$.form.submit()
-        })
-      },
       properties: {
-        prop1: {
+        email: {
           type: String,
-          value: 'login-polymerelements-app',
+          observer:"_emailChanged"
         },
       },
+      ready:function(){
+      },
+      _emailChangeds:function(nuevoValor, viejoValor){
+        console.log(nuevoValor);
+        console.log( viejoValor);
+      }
 
     });
   </script>
